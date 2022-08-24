@@ -9,5 +9,5 @@
     "module": "CommonJS",
     "moduleResolution": "node",                             
   },
-  "include": ["src"],
+  "include": ["server"],
 }

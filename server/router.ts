@@ -12,8 +12,6 @@ mainRouter.get('/users/:id', api.infoById);
 
 mainRouter.get('/users/:id/contacts', api.getUserContacts);
 
-mainRouter.post('/users/:id/contacts', api.postContacts);
-
-mainRouter.delete('/users/:id/contacts', api.deleteContacts);
+mainRouter.route('/users/:id/contacts').post(api.postContacts).delete(api.deleteContacts);
 
 export { mainRouter };
